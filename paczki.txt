@@ -1,0 +1,1 @@
+Zamiast instalacji chromeDrivera mozna zainstalowac paczke webdriver-manager.
