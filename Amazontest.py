@@ -20,3 +20,9 @@ print(a)
 
 # for i in driver.find_elements_by_id("img"):
 #     print(i.src)
+cv = (driver.find_elements_by_xpath('//link'))
+print(type(cv))
+b = len(driver.find_elements_by_xpath('//link'))  # ilosc elemenow link na stronie
+print(b)
+
+########
