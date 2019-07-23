@@ -55,4 +55,6 @@ print(driver.find_element_by_xpath('//input[@id="fname"]').get_attribute('value'
 
 ### Sprawdzenie obecnosci obrazu na stronie
 print(driver.find_element_by_xpath('//*[@id="smileImage"]').size.get('height'))
-print(driver.find_element_by_xpath('//*[@id="smileImage"]').get_attribute('naturalHeight')) # jesli wyniesie 0 to nie ma obrazka
+print(driver.find_element_by_xpath('//*[@id="smileImage"]').get_attribute('naturalHeight'))
+                                                        # jesli wyniesie 0 to nie ma obrazka
+

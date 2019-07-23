@@ -26,3 +26,6 @@ b = len(driver.find_elements_by_xpath('//link'))  # ilosc elemenow link na stron
 print(b)
 
 ########
+
+# Sprawdzenie czy obraz znajdue sie na stronie:
+print(driver.find_element_by_xpath("//*[@alt='Cellphones']").get_attribute('naturalHeight'))
