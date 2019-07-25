@@ -5,15 +5,19 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
 from webdriver_manager.chrome import ChromeDriverManager
 
-driver = webdriver.Chrome(r"C:\Users\slawek\PycharmProjects\czyst_selenium\drivers\chromedriver.exe")
+driver = webdriver.Chrome(r"D:\Selenium\czyste_sel\drivers\chromedriver.exe")  #praca
+#driver = webdriver.Chrome(r"C:\Users\slawek\PycharmProjects\czyst_selenium\drivers\chromedriver.exe") #dom
 # ...     Driver wykorzystany z uzyciem pliku w katalogu
 #driver = webdriver.Chrome(ChromeDriverManager().install())
 
-driver.get(r"C:\Users\slawek\Downloads\selenium_pliki\Test.html")
+driver.get(r"D:\Selenium\czyste_sel\selenium_pliki\Test.html") #praca
+#driver.get(r"C:\Users\slawek\Downloads\selenium_pliki\Test.html") #dom
+
 #driver.maximize_window()
 #driver.find_element_by_xpath('//*[@id="newPage"]').click()
 #driver.quit()   # zamyka wszystkie okna, metoda .close() zamyka okno na ktorej byl focus
 #driver.close()
+
 driver.find_element(By.ID, 'clickOnMe')
 #driver.find_element_by_id("fname").click()
 driver.find_element_by_name('fname').click()
