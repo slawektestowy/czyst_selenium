@@ -1,5 +1,8 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+#instalacja wind32.com    https://github.com/mhammond/pywin32/releases
+import win32com.client as comclt
+wsh= comclt.Dispatch("WScript.Shell")
 
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
@@ -9,4 +12,11 @@ driver.maximize_window()
 
 button = driver.find_element_by_xpath('//*[@id="bottom"]')
 
-webdriver.ActionChains(driver).double_click(button).perform()   # kilkniecie dwukrotne
+#webdriver.ActionChains(driver).double_click(button).perform()   # kilkniecie dwukrotne
+
+#klikniecie PPM
+webdriver.ActionChains(driver).context_click(button).perform()
+webdriver.ActionChains(driver).move_to_element(button).context_click().perform()
+wsh.SendKeys("{DOWN}")
+wsh.SendKeys("{DOWN}")
+wsh.SendKeys("{DOWN}")
