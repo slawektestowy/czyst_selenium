@@ -14,7 +14,7 @@ button = driver.find_element_by_xpath('//*[@id="bottom"]')
 
 #webdriver.ActionChains(driver).double_click(button).perform()   # kilkniecie dwukrotne
 
-#klikniecie PPM
+#klikniecie PPM i wybór elementu z contextmenu
 webdriver.ActionChains(driver).context_click(button).perform()
 webdriver.ActionChains(driver).move_to_element(button).context_click().perform()
 wsh= comclt.Dispatch("WScript.Shell")
