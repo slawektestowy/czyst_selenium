@@ -8,3 +8,6 @@ driver.maximize_window()
 
 element = driver.find_element_by_xpath('//*[@id="navbtn_tutorials"]')
 webdriver.ActionChains(driver).move_to_element(element).perform()
+
+#klikniecie na ten elemet z wykorzystaniem łańcucha 
+webdriver.ActionChains(driver).move_to_element(element).click(element).perform()
