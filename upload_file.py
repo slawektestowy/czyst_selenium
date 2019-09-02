@@ -10,3 +10,5 @@ input_on = driver.find_element_by_xpath('//*[@id="myFile"]')
 path = os.path.abspath(r'D:\userdata\glibowsk\My Documents\!!!!!\selenium\selenium.txt')
 
 input_on.send_keys(path)
+
+driver.save_screenshot("screenschots/screenschots.png")
