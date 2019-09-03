@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
 
 
@@ -16,3 +17,10 @@ if len(paragraph) > 0:
     print(f"Element is available {z} times")
 else:
     print("No such element on site")
+
+# II metoda znajdowanie elementu na stronie
+try:
+    driver.find_element_by_tag_name("papapa")
+    print("Element is available")
+except NoSuchElementException:
+    print("No such element present on website")
