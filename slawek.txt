@@ -1,2 +1,3 @@
 pierwszy
 czy fetch to ogarnie?
+nie, pull to ogarnia
