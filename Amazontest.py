@@ -28,5 +28,5 @@ print(b)
 ########
 
 # Sprawdzenie czy obraz znajdue sie na stronie:
-print(driver.find_element_by_xpath("//*[@alt='Cellphones']").get_attribute('naturalHeight'))
-#driver.close()
+#print(driver.find_element_by_xpath("//*[@alt='Cellphones']").get_attribute('naturalHeight'))
+driver.close()
