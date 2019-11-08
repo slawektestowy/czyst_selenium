@@ -4,17 +4,22 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 
+
+
+@pytest.fixture()
 def test_setup():
     global driver
-    driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.get("https://www.amazon.com/")
+    driver = webdriver.Chrome(r"C:\selenium\selenium_pliki\chromedriver.exe")
+#    driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver.get("https://www.google.com/")
     driver.maximize_window()
-    #driver.close()
+    yield
+    driver.close()
 
 
 
 
 
 
-def testing():
-    assert driver.title == "Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more", "To nie jest ten tytul strony"
+def testing(test_setup):
+    assert driver.title == "Google"
