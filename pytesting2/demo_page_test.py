@@ -23,3 +23,6 @@ def test_setup():
 
 def testing(test_setup):
     assert driver.title == "Google"
+
+def testing2(test_setup):
+    assert driver.title == "Google"
